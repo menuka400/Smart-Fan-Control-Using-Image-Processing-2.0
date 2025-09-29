@@ -1,0 +1,18 @@
+Rock ✊ - All fingers closed (fist) - Turn off the fan
+Index Up 👆 - Only index finger extended (pointing up) - Set fan speed to 100%
+L-shape 🤟 - Thumb and index finger extended (like "L" or gun shape) - Turn On the fan
+Paper ✋ - All 5 fingers extended (open palm) - Set fan speed to 75%
+Scissors ✌️ - Index and middle fingers extended (parallel) - Reduce speed to 50%
+
+Rock: [0, 0, 0, 0, 0] - All fingers down
+Index Up: [0, 1, 0, 0, 0] - Only index finger up
+L-shape: [1, 1, 0, 0, 0] - Thumb + index finger up
+Paper: [1, 1, 1, 1, 1] - All fingers up
+Scissors: [0, 1, 1, 0, 0] - Index + middle fingers up
+
+
+ ✊ Rock - Turn OFF (0%)
+   👆 Index Up - Max Speed (100%)
+   🤟 L-shape - Turn ON (50%) (50%)
+   ✋ Paper - High Speed (75%)
+   ✌️ Scissors - Low Speed (25%)

@@ -1,0 +1,165 @@
+# Smart Fan Control System Configuration
+# Edit these settings to customize your gesture-controlled fan system
+
+# ESP32 Network Configuration
+esp32:
+  # Known IP address of your ESP32 (set to null for auto-discovery)
+  ip_address: "192.168.1.164"
+  
+  # Network ports
+  http_port: 80
+  udp_port: 4210
+  local_udp_port: 4211
+  
+  # Connection timeouts (seconds)
+  connection_timeout: 2
+  udp_timeout: 1
+  discovery_timeout: 1
+
+# Camera Configuration
+camera:
+  # Camera index (usually 0 for default camera)
+  index: 0
+  
+  # Camera resolution
+  width: 1280
+  height: 720
+  
+  # Flip camera horizontally (true for selfie-view)
+  flip_horizontal: true
+
+# Gesture Recognition Settings
+gesture_recognition:
+  # Time interval between gesture recognitions (seconds)
+  cooldown_interval: 4.0
+  cooldown_seconds: 4.0
+  
+  # Buffer size for gesture smoothing
+  buffer_size: 8
+  
+  # Confidence threshold for gesture detection (0.0 - 1.0)
+  confidence_threshold: 0.7
+  
+  # MediaPipe detection confidence (0.0 - 1.0)
+  min_detection_confidence: 0.7
+  
+  # MediaPipe tracking confidence (0.0 - 1.0)
+  min_tracking_confidence: 0.5
+  
+  # Maximum number of hands to detect
+  max_num_hands: 1
+
+# Fan Speed Commands
+# Each gesture maps to a specific fan speed percentage
+fan_commands:
+  Rock:
+    speed: 0
+    description: "Turn OFF"
+    emoji: "✊"
+  
+  L-shape:
+    speed: 50
+    description: "Turn ON (50%)"
+    emoji: "🤟"
+  
+  Scissors:
+    speed: 25
+    description: "Low Speed"
+    emoji: "✌️"
+  
+  Paper:
+    speed: 75
+    description: "High Speed"
+    emoji: "✋"
+  
+  Index Up:
+    speed: 100
+    description: "Max Speed"
+    emoji: "👆"
+
+# Display Settings
+display:
+  # Window title
+  window_title: "Wireless Gesture-Controlled Fan System"
+  
+  # Info panel dimensions
+  panel_height: 180
+  main_panel_height: 180
+  main_panel_width: 550
+  
+  # Gesture commands panel dimensions
+  commands_panel_height: 220
+  commands_panel_width: 650
+  
+  # No hand detected panel dimensions
+  no_hand_panel_width: 450
+  no_hand_panel_height: 140
+  
+  # Font settings
+  font_size: 0.7
+  font_thickness: 2
+  instruction_font_size: 0.5
+  
+  # Landmark drawing settings
+  landmark_color: [0, 255, 0]      # Green
+  landmark_thickness: 2
+  connection_color: [255, 255, 255] # White
+  connection_thickness: 2
+  
+  # Status display position
+  status_y_position: 30
+  
+  # Colors (BGR format for OpenCV)
+  colors:
+    background: [0, 0, 0]        # Black
+    border: [255, 255, 255]      # White
+    text_primary: [255, 255, 255] # White
+    text_secondary: [255, 255, 0] # Yellow
+    connected: [0, 255, 0]       # Green
+    disconnected: [0, 0, 255]    # Red
+    cooldown: [255, 165, 0]      # Orange
+    ready: [0, 255, 0]           # Green
+
+# Status Monitoring
+monitoring:
+  # How often to check ESP32 status (seconds)
+  status_check_interval: 10
+  
+  # Heartbeat age threshold (seconds)
+  heartbeat_threshold: 15
+  heartbeat_timeout: 15
+  
+  # Enable verbose logging
+  verbose_logging: true
+  
+  # Show heartbeat messages in console
+  show_heartbeats: true
+  
+  # Show status update messages
+  show_status_updates: true
+
+# Network Discovery Settings
+network:
+  # Enable automatic network scanning if known IP fails
+  auto_discovery: true
+  
+  # Network scan range (1-254)
+  scan_start: 1
+  scan_end: 254
+  
+  # Parallel scan threads for faster discovery
+  scan_threads: 10
+
+# Advanced Settings
+advanced:
+  # HTTP session timeout
+  http_session_timeout: 2
+  
+  # Command retry attempts
+  max_retries: 3
+  
+  # Gesture buffer clear on cooldown
+  clear_buffer_on_cooldown: true
+  
+  # Auto-reconnect on connection loss
+  auto_reconnect: true
