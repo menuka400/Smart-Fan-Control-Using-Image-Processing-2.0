@@ -8,8 +8,26 @@
 
 > 🚀 **Updated Version** of the original "Smart-Fan-Control-Using-Image-Processing" project with enhanced wireless capabilities, multi-control interfaces, and advanced ESP32 integration!
 
+## 🎬 Demo Video
+
+🎥 **Watch the project in action!** See all three control methods working together:
+
+[![Smart Fan Control V2.0 Demo](https://img.youtube.com/vi/kb7266dbLCk/maxresdefault.jpg)](https://youtu.be/kb7266dbLCk?si=MQXQ2FEmzqJiqpps)
+
+**[🎬 Click here to watch the full demo on YouTube](https://youtu.be/kb7266dbLCk?si=MQXQ2FEmzqJiqpps)**
+
+In this video you'll see:
+- 👋 **Hand gesture recognition** in real-time
+- 📱 **Blynk mobile app control** with live synchronization
+- 🎛️ **Rotary encoder physical control** with audio feedback
+- 💡 **RGB LED status indicators** showing system state
+- 📺 **LCD display** with real-time information
+- 🔊 **Audio feedback** for all interactions
+- 🌡️ **Temperature monitoring** integration
+
 ## 📋 Table of Contents
-- [🎯 Project Overview](#-project-overview)
+- [� Demo Video](#-demo-video)
+- [�🎯 Project Overview](#-project-overview)
 - [✨ New Features in V2.0](#-new-features-in-v20)
 - [🛠️ Hardware Components](#️-hardware-components)
 - [🎮 Control Methods](#-control-methods)
