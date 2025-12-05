@@ -14,7 +14,7 @@
 
 [![Smart Fan Control V2.0 Demo](https://img.youtube.com/vi/kb7266dbLCk/maxresdefault.jpg)](https://youtu.be/kb7266dbLCk?si=MQXQ2FEmzqJiqpps)
 
-**[🎬 Click here to watch the full demo on YouTube](https://youtu.be/kb7266dbLCk?si=MQXQ2FEmzqJiqpps)**
+**[🎬 Click here to watch the full demo on YouTube](https://youtu.be/VqwC6AHt0g4)**
 
 In this video you'll see:
 - 👋 **Hand gesture recognition** in real-time
