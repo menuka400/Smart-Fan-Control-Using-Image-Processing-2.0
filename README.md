@@ -12,7 +12,7 @@
 
 🎥 **Watch the project in action!** See all three control methods working together:
 
-[![Smart Fan Control V2.0 Demo](https://img.youtube.com/vi/kb7266dbLCk/maxresdefault.jpg)](https://youtu.be/kb7266dbLCk?si=MQXQ2FEmzqJiqpps)
+[![Smart Fan Control V2.0 Demo](https://img.youtube.com/vi/kb7266dbLCk/maxresdefault.jpg)](https://youtu.be/VqwC6AHt0g4)
 
 **[🎬 Click here to watch the full demo on YouTube](https://youtu.be/VqwC6AHt0g4)**
 
